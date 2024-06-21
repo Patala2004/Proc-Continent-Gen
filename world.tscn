@@ -267,12 +267,18 @@ sources/0 = SubResource("TileSetAtlasSource_wpmpp")
 [node name="World" type="Node2D" node_paths=PackedStringArray("Map")]
 script = ExtResource("1_mgulc")
 Map = NodePath("Map")
-height = 256
-width = 256
+height = 1024
+width = 1024
+octaves = 12
+falloffPercentage = 20.0
+scale2 = 350.0
+persistence = 0.4
+lacunarity = 3.0
 
 [node name="Map" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_7om58")
 format = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.18, 0.18)
+scale = Vector2(0.864177, 0.918678)
+zoom = Vector2(0.04, 0.04)

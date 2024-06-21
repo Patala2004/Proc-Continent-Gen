@@ -5,6 +5,7 @@ BLOCK_SIZE = 16
 WIDTH = BLOCK_SIZE * 255
 HEIGHT = BLOCK_SIZE
 
+
 # Create a new image with the specified dimensions
 image = Image.new('L', (WIDTH, HEIGHT))
 
